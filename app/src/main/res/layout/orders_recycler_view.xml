@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvOrdersView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="22dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/round_bg">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/large_tv_height"
+        android:text="@string/order_no"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderNo"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="8473905894"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView"
+        app:layout_constraintStart_toEndOf="@+id/appCompatTextView"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01-08-2024"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOrderNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvOrderNo"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView7"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/tracking_no"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTrackingNo"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swe8b2j3br"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView7"
+        app:layout_constraintStart_toEndOf="@+id/appCompatTextView7"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView7" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView8"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/quantity"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView7"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView7" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrdersCount"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView8"
+        app:layout_constraintStart_toEndOf="@+id/appCompatTextView8"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView8" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView9"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_amount"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView8"
+        app:layout_constraintEnd_toStartOf="@+id/tvOrderAmount"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView8" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderAmount"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="112$"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDetails"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_btn_bg_with_stroke"
+        android:text="@string/details"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView8"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView8" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderStatus"
+        style="@style/medium_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivered"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnDetails" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

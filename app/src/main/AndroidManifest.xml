@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShoppingGrid"
+        tools:targetApi="31">
+        <activity
+            android:name=".Splash.AfterSplash"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.ForgetPasswordForUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.LoginForUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.MyItemSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.NewOrderItemClickedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.NextToSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.SellerNewOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.SignupForUserActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Splash.SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.MyReviews"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ShippingAddress"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Orders"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ProductOnclick"
+            android:exported="false" />
+        <activity
+            android:name=".Home.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Product"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

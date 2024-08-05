@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.ProfileFragment"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        style="@style/large_txt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/large_tv_height"
+        android:text="@string/my_profile"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_foreground" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserName"
+        style="@style/medium_txt_theme"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_tv_height"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Matilda Browm"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_tv_height"
+        android:layout_marginTop="8dp"
+        android:text="matildabrown@gmail.com"
+        style="@style/small_txt_theme"
+        app:layout_constraintStart_toStartOf="@+id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMyOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="18dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            style="@style/medium_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:text="@string/my_orders"
+            android:layout_margin="12dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOrdersCount"
+            style="@style/small_txt_theme"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_marginTop="40dp"
+            android:text="Already have 12 orders" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvShippingAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/cvMyOrder"
+        app:layout_constraintTop_toBottomOf="@+id/cvMyOrder">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView3"
+            style="@style/medium_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_margin="12dp"
+            android:text="@string/shipping_addresses"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAddressCount"
+            style="@style/small_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:text="3 Addresses" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPaymentMethods"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/cvShippingAddress"
+        app:layout_constraintTop_toBottomOf="@+id/cvShippingAddress">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView4"
+            style="@style/medium_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_margin="12dp"
+            android:text="@string/payment_methods"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPaymentMethod"
+            style="@style/small_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:text="Via Visa" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvReviews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/cvPaymentMethods"
+        app:layout_constraintTop_toBottomOf="@+id/cvPaymentMethods">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView5"
+            style="@style/medium_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_margin="12dp"
+            android:text="@string/my_reviews"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReviews"
+            style="@style/small_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:text="Reviews for 4 items" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        app:cardCornerRadius="@dimen/corner_radius"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/cvReviews"
+        app:layout_constraintTop_toBottomOf="@+id/cvReviews">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView6"
+            style="@style/medium_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_margin="12dp"
+            android:text="@string/settings"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSettings"
+            style="@style/small_txt_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/small_tv_height"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:text="Notification, password" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

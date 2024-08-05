@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShoppingGrid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ShoppingGrid" parent="Base.Theme.ShoppingGrid">
+        <item name="android:statusBarColor">@color/red</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+
+
+    <style name="fabShape">
+        <item name="cornerSize">50dp</item>
+    </style>
+
+
+    <style name="large_txt_theme" >
+        <item name="android:textSize">@dimen/large_txt_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="medium_txt_theme" >
+        <item name="android:textSize">@dimen/medium_txt_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="small_txt_theme" >
+        <item name="android:textSize">@dimen/small_txt_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="micro_txt_theme" >
+        <item name="android:textSize">@dimen/micro_txt_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

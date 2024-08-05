@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:background="@drawable/dlg_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:background="@drawable/divider_shape"
+        android:layout_marginTop="2dp"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:backgroundTint="#828784"
+        app:dividerColor="#828784"
+        app:dividerInsetEnd="20dp"
+        app:dividerInsetStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvCrossDlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableStartCompat="@drawable/cross"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+
+        android:id="@+id/tvWhatYouRate"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:text="What is your rating?"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+
+        />
+
+
+    <RatingBar
+        android:id="@+id/ratingBarDlg"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/appColor"
+        app:layout_constraintStart_toStartOf="@id/tvWhatYouRate"
+        app:layout_constraintEnd_toEndOf="@id/tvWhatYouRate"
+        app:layout_constraintTop_toBottomOf="@id/tvWhatYouRate"
+
+        />
+
+    <TextView
+        android:id="@+id/tvShareOpinion"
+        android:layout_marginTop="20dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ratingBarDlg"
+        app:layout_constraintEnd_toEndOf="@id/ratingBarDlg"
+        app:layout_constraintTop_toBottomOf="@id/ratingBarDlg"
+        android:text="Please share your opinion \n       about the product!"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/etReviewDlg"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Write Review..."
+        app:layout_constraintTop_toBottomOf="@id/tvShareOpinion"
+        app:layout_constraintStart_toStartOf="@id/tvShareOpinion"
+        app:layout_constraintEnd_toEndOf="@id/tvShareOpinion"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        />
+
+
+    <Button
+        android:id="@+id/btnSendReviewDlg"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Send  Review"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/appColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
