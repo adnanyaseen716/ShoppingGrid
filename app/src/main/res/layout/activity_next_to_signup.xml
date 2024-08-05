@@ -36,21 +36,21 @@
 
     <ImageView
         android:id="@+id/ivNext"
-        android:layout_width="300dp"
-        android:layout_height="350dp"
-        android:src="@drawable/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backgroundfirst"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="@id/guidelineTop"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="1.5" />
 
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome To Shoprone"
+        android:text="Welcome To ShoppingGrid"
         android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -80,9 +80,9 @@
         android:id="@+id/btnNextActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/secondary_app_color"
         android:text="Next"
-        android:textColor="@color/white"
+        android:textColor="@color/text_app_color"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"

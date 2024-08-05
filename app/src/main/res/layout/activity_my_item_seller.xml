@@ -47,9 +47,10 @@
             android:layout_height="match_parent"
             app:title="My Items"
             app:elevation="0dp"
-            android:background="@color/white"
-            app:titleTextColor="@color/black"
+            android:background="@color/primary_app_color"
+            app:titleTextColor="@color/white"
             app:titleCentered="true"
+            app:navigationIconTint="@color/white"
             app:navigationIcon="@drawable/baseline_dehaze_24"
             app:menu="@menu/top_bar_seller_order"
             />

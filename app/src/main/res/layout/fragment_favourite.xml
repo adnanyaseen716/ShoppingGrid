@@ -12,7 +12,7 @@
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#ED2222"
+        android:backgroundTint="@color/primary_app_color"
         app:layout_constraintEnd_toEndOf="@id/guideline16"
         app:layout_constraintStart_toStartOf="@id/guideline15"
         app:layout_constraintTop_toTopOf="@id/guideline17">

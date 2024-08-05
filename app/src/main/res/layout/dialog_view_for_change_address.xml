@@ -94,14 +94,16 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSavePassword"
-        android:layout_width="348dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/round_btn_bg"
-        android:backgroundTint="@color/btn_color"
+        android:backgroundTint="@color/secondary_app_color"
         android:text="@string/save"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tlpass"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="@+id/tlpass"
         app:layout_constraintTop_toBottomOf="@+id/tlpass" />
 

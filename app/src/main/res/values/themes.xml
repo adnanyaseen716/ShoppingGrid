@@ -6,7 +6,7 @@
     </style>
 
     <style name="Theme.ShoppingGrid" parent="Base.Theme.ShoppingGrid">
-        <item name="android:statusBarColor">@color/red</item>
+        <item name="android:statusBarColor">@color/primary_app_color</item>
     </style>
 
     <style name="DialogAnimation">

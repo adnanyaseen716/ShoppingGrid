@@ -5,6 +5,7 @@
         android:id="@+id/menuSearch"
         android:title="Search"
         app:showAsAction="always"
-        android:icon="@drawable/baseline_search_24"
+        android:icon="@drawable/search"
+        android:iconTint="@color/white"
         />
 </menu>

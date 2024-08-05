@@ -11,6 +11,6 @@
     <color name="primary_app_color">#013033</color>
     <color name="secondary_app_color">#8acf01</color>
     <color name="background_app_color">#FFFFFF</color>
-    <color name="text_app_color">#042021</color>
+    <color name="text_app_color">#000000</color>
 
 </resources>

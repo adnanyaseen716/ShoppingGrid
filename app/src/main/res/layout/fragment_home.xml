@@ -23,7 +23,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/red"
+                android:background="@color/primary_app_color"
                 android:padding="5dp">
                 <TextView
                     android:layout_width="wrap_content"
