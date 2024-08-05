@@ -22,7 +22,7 @@ public class NextToSignupActivity extends AppCompatActivity {
         btnNextActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent signUpIntent = new Intent(NextToSignupActivity.this,SignupForUserActivity.class);
+                Intent signUpIntent = new Intent(NextToSignupActivity.this,AfterSplash.class);
                 startActivity(signUpIntent);
             }
         });
