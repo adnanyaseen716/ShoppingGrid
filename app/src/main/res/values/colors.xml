@@ -4,8 +4,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFD31E1E</color>
     <color name="lightBlue">#2196F3</color>
-
-
     <color name="appColor">#FFD31E1E</color>
     <color name="btn_color">#db3022</color>
+
+
+    <string name="primaryAppColor">#013033</string>
+    <string name="secondary_app_color">#8acf01</string>
+    <string name="background_app_color">#FFFFFF</string>
+    <string name="text_app_color">#042021</string>
+
 </resources>
