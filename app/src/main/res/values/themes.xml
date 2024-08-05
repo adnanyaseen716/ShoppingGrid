@@ -7,11 +7,6 @@
 
     <style name="Theme.ShoppingGrid" parent="Base.Theme.ShoppingGrid">
         <item name="android:statusBarColor">@color/red</item>
-        <item name="android:colorPrimary">#013033</item>
-        <string name="primary_app_color">#013033</string>
-        <string name="secondary_app_color">#8acf01</string>
-        <string name="background_app_color">#FFFFFF</string>
-        <string name="text_app_color">#042021</string>
     </style>
 
     <style name="DialogAnimation">
