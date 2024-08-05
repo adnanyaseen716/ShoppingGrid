@@ -10,14 +10,25 @@
     tools:context=".Splash.SplashScreenActivity">
 
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
-        android:layout_marginEnd="31dp"
         android:src="@drawable/troley"
-        app:layout_goneMarginStart="15dp"
+        app:layout_goneMarginStart="35dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,12 +36,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="240dp"
         android:fontFamily="@font/mainstay"
-        android:text="ShoppingGrid"
+        android:text="ShoppingGrid    "
         android:textColor="@color/text_app_color"
-        android:textSize="40sp"
+        android:textSize="33sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivLogo"
