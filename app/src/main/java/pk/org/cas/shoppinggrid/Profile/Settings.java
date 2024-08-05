@@ -3,6 +3,7 @@ package pk.org.cas.shoppinggrid.Profile;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
@@ -49,6 +50,20 @@ public class Settings extends AppCompatActivity {
             btnSavePassword = bottomSheetDialog.findViewById(R.id.btnSavePassword);
             btnForgetPassword = bottomSheetDialog.findViewById(R.id.btnForgetPassword);
             bottomSheetDialog.show();
+
+            btnSavePassword.setOnClickListener(view1 -> {
+                if (etNewPassword.getText().toString().equals(etRepeatNewPassword.getText().toString())){
+
+                    if ( etNewPassword.getText().toString().length() < 8 ){
+                        Toast.makeText(this, "Password can't less than 8 characters", Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
+                        bottomSheetDialog.dismiss();
+                    }
+                }else {
+                    Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT).show();
+                }
+            });
         });
     }
 }

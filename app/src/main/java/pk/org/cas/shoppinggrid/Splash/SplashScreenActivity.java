@@ -26,7 +26,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
                 // on below line we are
                 // creating a new intent
-                Intent intentNewActivity = new Intent(SplashScreenActivity.this, AfterSplash.class);
+                Intent intentNewActivity = new Intent(SplashScreenActivity.this,NextToSignupActivity.class);
                 startActivity(intentNewActivity);
                 finish();
             }
