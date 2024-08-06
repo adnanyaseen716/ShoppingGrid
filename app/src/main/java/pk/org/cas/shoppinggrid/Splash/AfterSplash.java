@@ -19,7 +19,7 @@ public class AfterSplash extends AppCompatActivity {
 
 
         btnSeller.setOnClickListener(v -> {
-            Intent intentSeller = new Intent(AfterSplash.this, SignupForUserActivity.class);
+            Intent intentSeller = new Intent(AfterSplash.this, SellerNewOrderActivity.class);
             startActivity(intentSeller);
         });
 
