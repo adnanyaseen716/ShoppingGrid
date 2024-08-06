@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingGrid"
         tools:targetApi="31">
+        <activity android:name=".Cart.ActivityPayment"
+            android:exported="false" />
+        <activity android:name=".Cart.ActivityAddress"
+            android:exported="false" />
         <activity
             android:name=".Splash.AfterSplash"
             android:exported="false" />
