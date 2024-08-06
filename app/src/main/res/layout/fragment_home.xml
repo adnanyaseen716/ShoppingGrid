@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Home.HomeFragment">
 
 
@@ -90,12 +91,14 @@
                 android:text="Category"
                 android:textStyle="bold"
                 android:paddingStart="10dp"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                android:background="@color/white"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvMainFirst"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
 
 
             <androidx.recyclerview.widget.RecyclerView
@@ -103,6 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:background="@color/white"
                 app:layout_constraintStart_toEndOf="@id/guideline5"
                 app:layout_constraintEnd_toStartOf="@id/guideline6"
                 app:layout_constraintTop_toBottomOf="@id/rvMainFirst"/>

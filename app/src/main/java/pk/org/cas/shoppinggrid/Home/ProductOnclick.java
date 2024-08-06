@@ -93,7 +93,5 @@ Button btnWriteReview;
                 dialog.getWindow().setGravity(Gravity.BOTTOM);
             }
         });
-
-
     }
 }
