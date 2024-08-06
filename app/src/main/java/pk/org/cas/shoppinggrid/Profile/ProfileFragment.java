@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import pk.org.cas.shoppinggrid.Cart.ActivityPayment;
 import pk.org.cas.shoppinggrid.R;
 
 
@@ -60,6 +61,10 @@ public class ProfileFragment extends Fragment {
         });
         cvSettings.setOnClickListener(v -> {
             Intent intent = new Intent(getContext(), Settings.class);
+            startActivity(intent);
+        });
+        cvPaymentMethods.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), ActivityPayment.class);
             startActivity(intent);
         });
 

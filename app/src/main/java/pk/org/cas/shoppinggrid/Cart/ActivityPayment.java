@@ -17,6 +17,7 @@ public class ActivityPayment extends AppCompatActivity {
         setContentView(R.layout.activity_payment);
 
         btn_back = findViewById(R.id.btn_back);
+
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
