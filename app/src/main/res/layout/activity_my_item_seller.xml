@@ -67,8 +67,7 @@
         app:layout_constraintTop_toTopOf="@id/guidelineStart"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
-        />
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
