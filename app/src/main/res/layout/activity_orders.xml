@@ -23,12 +23,13 @@
         style="@style/large_txt_theme"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/large_tv_height"
+        android:layout_marginStart="85dp"
         android:text="@string/my_orders"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guidelineUnderOrder"
         app:layout_constraintStart_toStartOf="@+id/guidelineStart"
         app:layout_constraintTop_toTopOf="@+id/guidelineTop"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.6" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvOrder"

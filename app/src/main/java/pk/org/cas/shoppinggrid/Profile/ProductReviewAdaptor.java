@@ -33,7 +33,6 @@ public class ProductReviewAdaptor extends RecyclerView.Adapter<ProductReviewAdap
         ProductModel productModel = productModelList.get(position);
         holder.tvProductName.setText(productModel.getProductName());
         holder.tvProductDescription.setText(productModel.getProductDescription());
-        holder.tvProductColor.setText(productModel.getProductColor());
 
     }
 
@@ -44,7 +43,7 @@ public class ProductReviewAdaptor extends RecyclerView.Adapter<ProductReviewAdap
 
     class ProductReviewViewHolder extends RecyclerView.ViewHolder {
         ImageView ivProductImage;
-        TextView tvProductName, tvProductDescription, tvProductColor;
+        TextView tvProductName, tvProductDescription;
         Button btnLeaveReview;
         public ProductReviewViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -53,8 +52,6 @@ public class ProductReviewAdaptor extends RecyclerView.Adapter<ProductReviewAdap
 
             tvProductName = itemView.findViewById(R.id.tvProductName);
             tvProductDescription = itemView.findViewById(R.id.tvProductDescription);
-            tvProductColor = itemView.findViewById(R.id.tvProductColor);
-
             btnLeaveReview = itemView.findViewById(R.id.btnLeaveReview);
         }
     }

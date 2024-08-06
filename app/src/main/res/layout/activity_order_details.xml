@@ -23,13 +23,14 @@
         style="@style/medium_txt_theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="8dp"
         android:text="@string/order_details"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btnBack"
         app:layout_constraintStart_toEndOf="@+id/btnBack"
         app:layout_constraintTop_toTopOf="@+id/btnBack"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
