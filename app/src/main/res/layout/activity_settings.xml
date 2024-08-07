@@ -19,213 +19,227 @@
         app:layout_constraintBottom_toTopOf="@+id/guidelineTop"
         app:layout_constraintStart_toStartOf="@+id/guidelineStart" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/appCompatTextView"
-        style="@style/large_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/large_tv_height"
-        android:text="@string/settings"
-        android:textStyle="bold"
-
-        app:layout_constraintBottom_toTopOf="@+id/guidelineUnderOrder"
-        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvUserName"
-        style="@style/medium_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/small_tv_height"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/personal_information"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-        app:layout_constraintTop_toTopOf="@+id/guidelineUnderOrder" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlName"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
-        android:layout_height="@dimen/et_height"
-        android:layout_marginTop="16dp"
-        android:hint="@string/full_name"
-        app:hintAnimationEnabled="true"
-        android:padding="2dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:boxBackgroundColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@+id/tvUserName">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etFullname"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="4dp"
-            android:inputType="text"
-            android:background="@drawable/et_bg"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="44dp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlDateOfBirth"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/et_height"
-        android:layout_marginTop="16dp"
-        android:hint="@string/date_of_birth"
-        android:padding="2dp"
-        app:boxBackgroundColor="@color/white"
-        app:hintAnimationEnabled="true"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@id/tlName">
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etDateOfBirth"
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/et_bg"
-            android:padding="4dp"
-            android:inputType="date"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="44dp" />
+            android:layout_height="match_parent">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                style="@style/large_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/large_tv_height"
+                android:layout_marginTop="16dp"
+                android:text="@string/settings"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvpass"
-        style="@style/medium_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/small_tv_height"
-        android:layout_marginTop="60dp"
-        android:text="@string/password"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tlDateOfBirth"
-        app:layout_constraintTop_toBottomOf="@+id/tlDateOfBirth" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPersonalInfo"
+                style="@style/medium_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_tv_height"
+                android:layout_marginTop="24dp"
+                android:text="@string/personal_information"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/appCompatTextView"
+                app:layout_constraintTop_toBottomOf="@id/appCompatTextView" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnChange"
-        style="@style/small_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:text="@string/change"
-        app:layout_constraintBottom_toBottomOf="@+id/tvpass"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintTop_toTopOf="@+id/tvpass" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="16dp"
+                android:hint="@string/full_name"
+                android:padding="2dp"
+                app:boxBackgroundColor="@color/white"
+                app:hintAnimationEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvPersonalInfo"
+                app:layout_constraintTop_toBottomOf="@+id/tvPersonalInfo">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlpass"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/et_height"
-        android:layout_marginTop="16dp"
-        android:hint="@string/password"
-        android:padding="2dp"
-        app:boxBackgroundColor="@color/white"
-        app:hintAnimationEnabled="true"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-        app:layout_constraintTop_toBottomOf="@id/tvpass"
-        app:passwordToggleEnabled="true"
-        >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/et_bg"
+                    android:inputType="text"
+                    android:padding="4dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="44dp" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/et_bg"
-            android:inputType="textPassword"
-            android:padding="4dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="44dp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlDateOfBirth"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="16dp"
+                android:hint="@string/date_of_birth"
+                android:padding="2dp"
+                app:boxBackgroundColor="@color/white"
+                app:hintAnimationEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tlName"
+                app:layout_constraintTop_toBottomOf="@id/tlName">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvNotification"
-        style="@style/medium_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/small_tv_height"
-        android:layout_marginTop="36dp"
-        android:text="@string/notification"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tlpass"
-        app:layout_constraintTop_toBottomOf="@+id/tlpass" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/et_bg"
+                    android:inputType="date"
+                    android:padding="4dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="44dp" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvSales"
-        style="@style/medium_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/small_tv_height"
-        android:layout_marginTop="16dp"
-        android:text="@string/sales"
-        app:layout_constraintStart_toStartOf="@+id/tvNotification"
-        app:layout_constraintTop_toBottomOf="@id/tvNotification" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvNewArrivals"
-        style="@style/medium_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/small_tv_height"
-        android:layout_marginTop="8dp"
-        android:text="@string/new_arrivals"
-        app:layout_constraintStart_toStartOf="@+id/tvSales"
-        app:layout_constraintTop_toBottomOf="@id/tvSales" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvpass"
+                style="@style/medium_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_tv_height"
+                android:layout_marginTop="60dp"
+                android:text="@string/password"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tlDateOfBirth"
+                app:layout_constraintTop_toBottomOf="@+id/tlDateOfBirth" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvDeliveryChanges"
-        style="@style/medium_txt_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/small_tv_height"
-        android:layout_marginTop="8dp"
-        android:text="Delivery status change"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
-        app:layout_constraintStart_toStartOf="@+id/tvNewArrivals"
-        app:layout_constraintTop_toBottomOf="@id/tvNewArrivals"
-        app:layout_constraintVertical_bias="0.0" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnChange"
+                style="@style/small_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="@string/change"
+                app:layout_constraintBottom_toBottomOf="@+id/tvpass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvpass"
+                app:layout_constraintVertical_bias="0.437" />
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/swSales"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="256dp"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/tvSales"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvSales"
-        app:layout_constraintTop_toTopOf="@+id/tvSales"
-        app:layout_constraintVertical_bias="1.0" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlpass"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="16dp"
+                android:hint="@string/password"
+                android:padding="2dp"
+                app:boxBackgroundColor="@color/white"
+                app:hintAnimationEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvpass"
+                app:layout_constraintTop_toBottomOf="@id/tvpass"
+                app:passwordToggleEnabled="true">
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/swNewArrivals"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/tvNewArrivals"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvNewArrivals"
-        app:layout_constraintTop_toTopOf="@+id/tvNewArrivals"
-        app:layout_constraintVertical_bias="1.0" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/et_bg"
+                    android:inputType="textPassword"
+                    android:padding="4dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="44dp" />
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/swDeliveryChanges"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryChanges"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvDeliveryChanges"
-        app:layout_constraintTop_toTopOf="@+id/tvDeliveryChanges"
-        app:layout_constraintVertical_bias="1.0" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNotification"
+                style="@style/medium_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_tv_height"
+                android:layout_marginTop="36dp"
+                android:text="@string/notification"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tlpass"
+                app:layout_constraintTop_toBottomOf="@+id/tlpass" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSales"
+                style="@style/medium_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_tv_height"
+                android:layout_marginTop="16dp"
+                android:text="@string/sales"
+                app:layout_constraintStart_toStartOf="@+id/tvNotification"
+                app:layout_constraintTop_toBottomOf="@id/tvNotification" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNewArrivals"
+                style="@style/medium_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_tv_height"
+                android:layout_marginTop="8dp"
+                android:text="@string/new_arrivals"
+                app:layout_constraintStart_toStartOf="@+id/tvSales"
+                app:layout_constraintTop_toBottomOf="@id/tvSales" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeliveryChanges"
+                style="@style/medium_txt_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/small_tv_height"
+                android:layout_marginTop="8dp"
+                android:text="Delivery status change"
+                app:layout_constraintStart_toStartOf="@+id/tvNewArrivals"
+                app:layout_constraintTop_toBottomOf="@id/tvNewArrivals"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/tvSales"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvSales"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swNewArrivals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/tvNewArrivals"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvNewArrivals"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swDeliveryChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryChanges"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDeliveryChanges"
+                app:layout_constraintVertical_bias="1.0" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                app:layout_constraintStart_toStartOf="@id/tvDeliveryChanges"
+                app:layout_constraintTop_toBottomOf="@id/tvDeliveryChanges"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart"
@@ -254,13 +268,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.95" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineUnderOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.14" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
