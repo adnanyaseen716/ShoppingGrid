@@ -24,13 +24,10 @@
         android:id="@+id/radioGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
         app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
-        app:layout_constraintTop_toTopOf="@id/guidelineTop"
-
-        >
-
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop">
 
         <RadioButton
             android:id="@+id/rdAssociate"
@@ -68,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:text="agadjbgadghidhgiadgja \nfetetetwwyyeyey"
+            android:text="agadjbgadghidhgiadgja \nfetetetwwyyeyey scklmclmdslkc dslmclkdsmladclclas....jjnmjn."
             android:textColor="#df1b33"
             android:textSize="20sp" />
 
@@ -101,14 +98,13 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/secondary_app_color"
         android:text="Continue"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:textColor="@color/text_app_color"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintBottom_toTopOf="@id/guideline24"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart"
@@ -130,12 +126,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.85" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

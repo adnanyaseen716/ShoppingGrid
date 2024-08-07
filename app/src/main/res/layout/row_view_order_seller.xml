@@ -17,8 +17,8 @@
         app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:cardElevation="10dp"
-        >
+        app:cardElevation="22dp"
+        android:layout_marginBottom="10dp">
         <ImageView
             android:id="@+id/ivNewOrders"
             android:layout_width="75dp"

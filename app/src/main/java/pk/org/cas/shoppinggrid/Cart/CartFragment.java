@@ -10,14 +10,15 @@ import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import pk.org.cas.shoppinggrid.R;
 
 public class CartFragment extends Fragment {
     View view;
-    ImageButton imageButton3 ;
-    TextView tv_checkout_now;
-    ConstraintLayout clCheckout;
+    RecyclerView rvItemList;
+    TextView tv_price, tv_delivery_fee, tv_total_amount, tv_CheckOut;;
+
 
     public CartFragment() {
         // Required empty public constructor
@@ -29,27 +30,19 @@ public class CartFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_cart, container, false);
 
-        imageButton3 = view.findViewById(R.id.imageButton3);
-        tv_checkout_now = view.findViewById(R.id.tv_checkout_now);
-        clCheckout = view.findViewById(R.id.clCheckout);
+        rvItemList = view.findViewById(R.id.rvItemList);
+        tv_price = view.findViewById(R.id.tv_price);
+        tv_delivery_fee = view.findViewById(R.id.tv_delivery_fee);
+        tv_total_amount = view.findViewById(R.id.tv_total_amount);
+        tv_CheckOut = view.findViewById(R.id.tv_CheckOut);
 
-
-
-        clCheckout.setOnClickListener(v -> {
-            Intent intent = new Intent(getContext(), ActivityAddress.class);
-            startActivity(intent);
+        tv_CheckOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ActivityAddress.class);
+                startActivity(intent);
+            }
         });
-
-
-
-//        imageButton3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), ActivityAddress.class);
-//                startActivity(intent);
-//            }
-//        });
-
 
         return view;
     }

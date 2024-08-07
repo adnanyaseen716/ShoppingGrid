@@ -13,26 +13,26 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/your_cart"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItemList"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/md"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="4dp"
@@ -40,129 +40,100 @@
         app:layout_constraintTop_toTopOf="@+id/guideline7"
         tools:layout_editor_absoluteX="0dp" />
 
-    <TextView
-        android:id="@+id/tv_cart_total"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
-        android:text="Cart Total"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/rvItemList" />
-
-    <TextView
-        android:id="@+id/delivery_fee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:text="Delivery Fee"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/guiMid"
-        app:layout_constraintStart_toStartOf="@+id/tv_cart_total"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cart_total" />
-
-
-    <TextView
-        android:id="@+id/tv_total_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$ 90.00"
-        android:textColor="#df1b33"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/delivery_fee"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/tv_cart_total"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tv_dilevery_fee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$ 8.00"
-        android:textColor="#df1b33"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/delivery_fee"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@id/delivery_fee" />
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clCheckout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/black"
-        android:layout_marginTop="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guiMid"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="@+id/guideline">
+        app:layout_constraintBottom_toTopOf="@+id/guiMid"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/md">
 
         <TextView
-            android:id="@+id/tv_checkout_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/checkout_now"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_total"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
-            android:text="@string/total"
-            android:textColor="#DED8D8"
-            android:textSize="9sp"
-            app:layout_constraintEnd_toStartOf="@+id/tv_final_price"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_final_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="12dp"
-            android:text="$ 99.00"
-            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Cart Total"
+            android:textColor="@color/black"
             android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/icon_next"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline8"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="861dp" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:text="Delivery Fee"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Total Amount"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="$ 90.00"
+            android:textColor="@color/primary_app_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_delivery_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:text="$ 8.00"
+            android:textColor="@color/primary_app_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:text="$ 90.00"
+            android:textColor="@color/primary_app_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_CheckOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CheckOut"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/text_app_color"
+        android:background="@color/secondary_app_color"
+        android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/guiMid"
+        app:layout_constraintBottom_toTopOf="@id/guideline23"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -183,16 +154,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.095759235" />
+        app:layout_constraintGuide_percent="0.07" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guiMid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.88"
-
-        />
+        app:layout_constraintGuide_percent="0.88" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -202,6 +171,12 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.7619699" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

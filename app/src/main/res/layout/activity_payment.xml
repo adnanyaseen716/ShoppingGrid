@@ -9,16 +9,19 @@
     tools:context=".Cart.ActivityPayment">
 
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         style="@style/medium_txt_theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:text="Payment Method"
+        android:textColor="@color/text_app_color"
+        android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
-        app:layout_constraintStart_toEndOf="@+id/btn_back"
-        app:layout_constraintTop_toTopOf="@+id/btn_back" />
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintBottom_toTopOf="@id/guidelineTop"
+        tools:layout_editor_absoluteY="29dp" />
 
     <ImageButton
         android:id="@+id/btn_back"
@@ -58,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="CARD PAYMENT"
+        android:text="Card Payment"
         android:textColor="@color/text_app_color"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -106,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="CASH PAYMENT"
+        android:text="Cash Payment"
         android:textColor="@color/text_app_color"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -139,7 +142,7 @@
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/materialDivider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="0dp"
         android:layout_marginTop="44dp"
         app:dividerColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
@@ -149,13 +152,12 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
         android:text="Other Methods"
         android:textColor="@color/text_app_color"
-        android:textSize="22sp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/materialDivider_1"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@+id/materialDivider_1" />
 
     <TextView
@@ -217,6 +219,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.94" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineEnd"
         android:layout_width="wrap_content"
@@ -226,3 +229,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
