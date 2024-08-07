@@ -38,8 +38,8 @@ public class LoginForUserActivity extends AppCompatActivity {
             logIntent.putExtra("email", email);
             logIntent.putExtra("password", password);
             startActivity(logIntent);
-            Toast.makeText(LoginForUserActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
         });
+
         tv_forgotPassword.setOnClickListener(view -> {
             Intent forgotIntent = new Intent(LoginForUserActivity.this, ForgetPasswordForUserActivity.class);
             startActivity(forgotIntent);

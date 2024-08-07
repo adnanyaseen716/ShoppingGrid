@@ -29,7 +29,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.itemViewHolder
     @NonNull
     @Override
     public itemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View rootView = LayoutInflater.from(parent.getContext()).inflate(R.layout.column_view_my_item_seller,null);
+        View rootView = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_view_product,null);
         return new itemViewHolder(rootView);
     }
 

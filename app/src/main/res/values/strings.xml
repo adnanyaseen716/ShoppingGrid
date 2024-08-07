@@ -50,4 +50,7 @@
     <string name="new_address">New Address</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout_now">Checkout Now</string>
+    <string name="total">Total</string>
+    <string name="your_cart">YOUR CART</string>
 </resources>

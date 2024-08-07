@@ -76,8 +76,11 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(ProductAdapter.ProductViewHolder holder, int position) {
                 Toast.makeText(getContext(), "Clicked on Product", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getContext(), ProductOnclick.class);
+                startActivity(intent);
             }
         });
+
 
         ivNotification.setOnClickListener(new View.OnClickListener() {
             @Override

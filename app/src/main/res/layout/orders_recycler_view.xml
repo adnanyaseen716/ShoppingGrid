@@ -8,6 +8,9 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="22dp"
     android:layout_marginBottom="8dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:elevation="8dp"
     android:background="@drawable/round_bg">
 
     <androidx.appcompat.widget.AppCompatTextView

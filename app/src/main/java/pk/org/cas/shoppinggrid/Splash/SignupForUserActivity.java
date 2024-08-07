@@ -50,7 +50,7 @@ public class SignupForUserActivity extends AppCompatActivity {
         tvAlreadyAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent LoginIntent = new Intent(SignupForUserActivity.this,SignupForUserActivity.class);
+                Intent LoginIntent = new Intent(SignupForUserActivity.this,LoginForUserActivity.class);
                 startActivity(LoginIntent);
             }
         });
