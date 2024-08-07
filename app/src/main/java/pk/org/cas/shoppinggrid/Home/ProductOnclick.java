@@ -13,6 +13,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import pk.org.cas.shoppinggrid.R;
 
@@ -29,10 +34,16 @@ Button btnWriteReview;
         tvBackProduct =  findViewById(R.id.tvBackProduct);
         btnWriteReview =  findViewById(R.id.btnWriteReview);
         tvHeart = findViewById(R.id.tvHeart);
+        RecyclerView rv = findViewById(R.id.rv);
 
         tvBackProduct.setOnClickListener(view -> {
             finish();
         });
+
+        ReviewAdapter reviewAdapter = new ReviewAdapter(getReviews());
+        rv.setLayoutManager(new LinearLayoutManager(this));
+        rv.setAdapter(reviewAdapter);
+        rv.setHasFixedSize(true);
 
 
         tvHeart.setOnClickListener(new View.OnClickListener() {
@@ -93,5 +104,29 @@ Button btnWriteReview;
                 dialog.getWindow().setGravity(Gravity.BOTTOM);
             }
         });
+    }
+
+
+    private List<Review> getReviews(){
+        List<Review> reviews = new ArrayList<>();
+        reviews.add(new Review("User Name","12/12/1212","Content",R.drawable.review_test_image,4 ));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content  j jf j jf j kf k f ",R.drawable.review_test_image ,3));
+        reviews.add(new Review("User Name","12/12/1212","Content jbj fj fj fj fj djfjfjfjej fje fj fje fje fje j fje fj ejvj vjvjvjvjvjvjv j vj vj vrj vrjv rj vrj vjr vrj vrjvrj verjv ejv jv",R.drawable.review_test_image , 5));
+        reviews.add(new Review("User Name","12/12/1212","Content jxbcjj j cj j cj cjxj jc jxcj xjc jc jc jc j cj cj jc jcjcjcdj dj djf jfjfj fjd f",R.drawable.review_test_image  , 1));
+
+        return  reviews;
     }
 }

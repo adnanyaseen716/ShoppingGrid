@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="700dp"
+    android:layout_height="600dp"
     android:background="@drawable/dlg_background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -54,7 +54,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:progressTint="@color/appColor"
+        android:progressTint="#FFEB3B"
         app:layout_constraintStart_toStartOf="@id/tvWhatYouRate"
         app:layout_constraintEnd_toEndOf="@id/tvWhatYouRate"
         app:layout_constraintTop_toBottomOf="@id/tvWhatYouRate"
@@ -64,7 +64,7 @@
     <TextView
         android:id="@+id/tvShareOpinion"
         android:layout_marginTop="20dp"
-        android:layout_width="260dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/ratingBarDlg"
         app:layout_constraintEnd_toEndOf="@id/ratingBarDlg"
@@ -77,12 +77,14 @@
     <EditText
         android:layout_marginTop="30dp"
         android:id="@+id/etReviewDlg"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
         android:layout_height="wrap_content"
         android:hint="Write Review..."
         app:layout_constraintTop_toBottomOf="@id/tvShareOpinion"
-        app:layout_constraintStart_toStartOf="@id/tvShareOpinion"
-        app:layout_constraintEnd_toEndOf="@id/tvShareOpinion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:textSize="18sp"
         android:textColor="@color/black"
         android:background="@color/white"
@@ -91,7 +93,9 @@
 
     <Button
         android:id="@+id/btnSendReviewDlg"
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Send  Review"
