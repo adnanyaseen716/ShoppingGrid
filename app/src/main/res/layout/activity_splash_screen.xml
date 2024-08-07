@@ -27,7 +27,7 @@
         android:fontFamily="@font/marons_regular"
         android:text="ShoppingGrid"
         android:textColor="@color/text_app_color"
-        android:textSize="45sp"
+        android:textSize="46sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
