@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -36,7 +37,7 @@
             android:id="@+id/tvTitleOfOrders"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:text="Parachute bag best in rains
 and its quality is best........"
             android:layout_marginStart="92dp"
@@ -135,24 +136,24 @@ and its quality is best........"
             android:textColor="@color/black"
             android:layout_marginTop="135dp"
             android:layout_marginBottom="5dp"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="105dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="110dp"
             android:text="Product ID"
-            android:textStyle="italic"
             android:textColor="@color/black"
             android:textSize="12sp"
-            android:layout_marginTop="110dp"
-            android:layout_marginStart="100dp"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
         <TextView
             android:id="@+id/tvOrderQuantity"
             android:layout_width="wrap_content"
@@ -164,7 +165,7 @@ and its quality is best........"
             android:layout_marginTop="135dp"
             android:inputType="number"
             android:layout_marginBottom="5dp"
-            android:layout_marginStart="180dp"
+            android:layout_marginStart="190dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -177,7 +178,7 @@ and its quality is best........"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:layout_marginTop="110dp"
-            android:layout_marginStart="180dp"
+            android:layout_marginStart="185dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -199,20 +200,20 @@ and its quality is best........"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Order Status    "
-            android:textStyle="italic"
+            android:layout_marginStart="253dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="5dp"
+            android:text=" Status    "
             android:textColor="@color/black"
             android:textSize="12sp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="110dp"
-            android:layout_marginStart="250dp"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
