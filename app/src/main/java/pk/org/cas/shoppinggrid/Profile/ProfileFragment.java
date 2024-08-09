@@ -32,7 +32,7 @@ public class ProfileFragment extends Fragment {
 
         ivProfileImage = view.findViewById(R.id.ivProfileImage);
 
-        tvUserName = view.findViewById(R.id.tvUserName);
+        tvUserName = view.findViewById(R.id.tvPersonalInfo);
         tvUserEmail = view.findViewById(R.id.tvUserEmail);
         tvOrdersCount = view.findViewById(R.id.tvOrdersCount);
         tvAddressCount = view.findViewById(R.id.tvAddressCount);
