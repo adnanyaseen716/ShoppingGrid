@@ -21,6 +21,11 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.02" />
     <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,17 +37,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Sign Up"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintTop_toTopOf="@id/guidelineTop"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
@@ -150,6 +156,7 @@
         app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:passwordToggleEnabled="true"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPasswordSignup"
@@ -209,8 +216,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="@id/btn_signup"
-        app:layout_constraintVertical_bias="1.0" />
-
+        app:layout_constraintVertical_bias="0.972" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
