@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 app:title="Notifications"
+                android:layout_centerInParent="true"
                 app:titleTextAppearance="@style/TextAppearance.Material3.HeadlineMedium"
                 app:titleTextColor="@color/white" />
         </RelativeLayout>
@@ -50,7 +51,6 @@
         app:layout_constraintStart_toStartOf="@id/guideline9"
         app:layout_constraintEnd_toEndOf="@id/guideline10"
         app:layout_constraintTop_toBottomOf="@id/appBar"/>
-
 
 
 
