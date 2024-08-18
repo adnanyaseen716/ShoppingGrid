@@ -47,6 +47,8 @@ public class SignupForUserActivity extends AppCompatActivity {
                 Toast.makeText(SignupForUserActivity.this, "Sign up successful", Toast.LENGTH_SHORT).show();
             }
         });
+
+
         tvAlreadyAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,10 +56,5 @@ public class SignupForUserActivity extends AppCompatActivity {
                 startActivity(LoginIntent);
             }
         });
-        ivGoogleSign.setOnClickListener(view -> {
-            Toast.makeText(SignupForUserActivity.this, "Sign up with Google successfully", Toast.LENGTH_SHORT).show();
-        });
-
-
     }
 }

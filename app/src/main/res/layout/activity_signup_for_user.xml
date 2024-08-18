@@ -178,7 +178,7 @@
         android:layout_marginStart="63dp"
         android:layout_marginTop="380dp"
         android:text="Already have an account? "
-        android:textColor="@color/primary_app_color"
+        android:textColor="@color/secondary_app_color"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"

@@ -12,5 +12,6 @@
     <color name="secondary_app_color">#8acf01</color>
     <color name="background_app_color">#FFFFFF</color>
     <color name="text_app_color">#000000</color>
+    <color name="transparent_white">#00000000</color>
 
 </resources>

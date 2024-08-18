@@ -24,7 +24,7 @@ public class AfterSplash extends AppCompatActivity {
         });
 
         btnCustomer.setOnClickListener(v -> {
-            Intent intentCustomer = new Intent(AfterSplash.this, SignupForUserActivity.class);
+            Intent intentCustomer = new Intent(AfterSplash.this, LoginForUserActivity.class);
             startActivity(intentCustomer);
         });
     }

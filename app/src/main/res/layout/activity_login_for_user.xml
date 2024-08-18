@@ -109,23 +109,47 @@
 
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="@id/guidelineTop"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.701" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Or Login with Google account"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="90dp"
+        android:text="New User?"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_app_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="or Login with Account"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="italic"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintTop_toTopOf="@id/guidelineTop"
-        app:layout_constraintVertical_bias="0.788"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
     <ImageView
         android:id="@+id/ivGoogleLogin"
         android:layout_width="50dp"
@@ -136,28 +160,22 @@
         android:src="@drawable/gogle"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintTop_toTopOf="@id/guidelineTop"
-        app:layout_constraintVertical_bias="0.933"
-
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/tv_forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="Forgot your Password? "
-        android:textColor="@color/black"
-        android:textSize="18sp"
+        android:layout_marginEnd="15dp"
+        android:text="Forgot your Password?"
+        android:textColor="@color/secondary_app_color"
+        android:textSize="17sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="@id/guidelineTop"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="0.54" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@
 
     <style name="Theme.ShoppingGrid" parent="Base.Theme.ShoppingGrid">
         <item name="android:statusBarColor">@color/primary_app_color</item>
+        <item name="android:autofilledHighlight">@android:color/transparent</item>
+
     </style>
 
     <style name="DialogAnimation">
@@ -40,7 +42,5 @@
         <item name="android:textSize">@dimen/micro_txt_size</item>
         <item name="android:textColor">@color/black</item>
     </style>
-
-
 
 </resources>
