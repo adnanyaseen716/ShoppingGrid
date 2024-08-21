@@ -49,7 +49,7 @@ Button btnWriteReview;
                             isToggled[0] = true;
                             Toast.makeText(ProductOnclick.this, "Added to favourites!", Toast.LENGTH_SHORT).show();
                         }else {
-                            tvHeart.setCompoundDrawablesWithIntrinsicBounds(R.drawable.heart_outline, 0, 0, 0);
+                            tvHeart.setCompoundDrawablesWithIntrinsicBounds(R.drawable.favourite_icon, 0, 0, 0);
                             isToggled[0] = false;
                             Toast.makeText(ProductOnclick.this, "Removed from favourites!", Toast.LENGTH_SHORT).show();
                         }

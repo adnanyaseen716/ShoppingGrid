@@ -46,14 +46,14 @@ public class NotificationActivity extends AppCompatActivity {
 
     public List<Notification> getNotificationData(){
         List<Notification> notifications = new ArrayList<>();
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
-        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.profile_icon));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.show_at_start));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.show_at_start));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks. How are you my friend? I am also good and happy.", "2 July 1947", R.drawable.show_at_start));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.show_at_start));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.show_at_start));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.show_at_start));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.show_at_start));
+        notifications.add(new Notification("Order", "Your order will be received in 2 days. Thanks You order will be received in 2 days. Thanks", "2 July 1947", R.drawable.show_at_start));
          return notifications;
     }
 

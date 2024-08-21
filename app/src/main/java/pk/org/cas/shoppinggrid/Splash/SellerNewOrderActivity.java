@@ -81,16 +81,16 @@ public class SellerNewOrderActivity extends AppCompatActivity {
     }
     public List<NewOrder> generateData(){
         List<NewOrder> newOrders = new ArrayList<>();
-        newOrders.add(new NewOrder("Parachute bag best in rains and its quality is best it is ver easy to carry and its very comfortable","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
-        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.bag));
+        newOrders.add(new NewOrder("Parachute bag best in rains and its quality is best it is ver easy to carry and its very comfortable","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
+        newOrders.add(new NewOrder("Parachute bag best in rains","23 jun,10:34","TST11890","Pending",30090,135,R.drawable.tshirt));
         return newOrders;
     }
 

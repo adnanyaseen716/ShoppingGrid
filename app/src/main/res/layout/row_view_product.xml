@@ -73,7 +73,7 @@
                 android:src="@drawable/star"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="4dp"
-                app:tint="#F6DE0F" />
+                app:tint="#F6E023" />
         </LinearLayout>
 
     </LinearLayout>

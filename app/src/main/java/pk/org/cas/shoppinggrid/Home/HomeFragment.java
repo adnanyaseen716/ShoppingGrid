@@ -54,10 +54,10 @@ public class HomeFragment extends Fragment {
         productsList = HomeFragment.getProductsList();
 
         List<SlideModel> imageSliderList = new ArrayList<>();
-        imageSliderList.add(new SlideModel(R.drawable.watch_first, ScaleTypes.FIT));
-        imageSliderList.add(new SlideModel(R.drawable.watch_second, ScaleTypes.FIT));
-        imageSliderList.add(new SlideModel(R.drawable.watch_first, ScaleTypes.FIT));
-        imageSliderList.add(new SlideModel(R.drawable.watch_second, ScaleTypes.FIT));
+        imageSliderList.add(new SlideModel(R.drawable.sport_category, ScaleTypes.FIT));
+        imageSliderList.add(new SlideModel(R.drawable.shoes_category, ScaleTypes.FIT));
+        imageSliderList.add(new SlideModel(R.drawable.cloth_category, ScaleTypes.FIT));
+        imageSliderList.add(new SlideModel(R.drawable.electronics_category, ScaleTypes.FIT));
         imageSlider.setImageList(imageSliderList, ScaleTypes.FIT);
 
 
@@ -137,11 +137,11 @@ public class HomeFragment extends Fragment {
         productList.add(new Product(5, "Racket", "A new collection of sports racket. Good quality squash racket. Badminton", 1570, R.drawable.racketfirst, "Sports Accessories", 4.3, 100));
         productList.add(new Product(6, "iPhone-14 Mobile", "A new iphone-14 mobile. very fine and good quality. Electronic accessories.", 57450, R.drawable.iphone, "Mobile Phones", 4.8, 100));
         productList.add(new Product(7, "Men's Shoes", "A pair of men's shoes. They are very flexible. Easy to wear.", 1500, R.drawable.shoe, "Shoes", 4.3, 100));
-        productList.add(new Product(8, "Dell Laptop", "A dell laptop with 14 inch screen and 256GB SSd and 16GB RAM, battery time 3000hrs.Electronic accessories.", 131500, R.drawable.laptop, "Laptops", 4.8, 100));
+        productList.add(new Product(8, "Dell Laptop", "A dell laptop with 14 inch screen and 256GB SSd and 16GB RAM, battery time 3000hrs.Electronic accessories.", 131500, R.drawable.laptopfirst, "Laptops", 4.8, 100));
         productList.add(new Product(9, "Summer T-shirt", "A new collection of men's and boys tshirt. It is very good quality summer t-shirt.", 1000, R.drawable.tshirt, "Clothes", 4.2, 100));
         productList.add(new Product(10, "Apple Laptop, Tablet", "A new Apple laptop with 14 inch screen and 256GB SSd and 16GB RAM, battery time 3000hrs. Along with Tablet and iPhone-15.Electronic accessories.", 995500, R.drawable.lapandmob, "Laptops", 4.9, 100));
-        productList.add(new Product(11, "Dumbbells", "A pair dumbbells for men. Jim exercise from different sizes of dumbbells. Sports accessories", 2999, R.drawable.dumbelll, "Sports Accessories", 4.3, 100));
-        productList.add(new Product(12, "Squash Racket", "A new collection of sports racket. Good quality squash and badminton racket.", 1570, R.drawable.racketssecond, "Sports Accessories", 4.3, 100));
+        productList.add(new Product(11, "Dumbbells", "A pair dumbbells for men. Jim exercise from different sizes of dumbbells. Sports accessories", 2999, R.drawable.dumbell, "Sports Accessories", 4.3, 100));
+        productList.add(new Product(12, "Squash Racket", "A new collection of sports racket. Good quality squash and badminton racket.", 1570, R.drawable.racketsecond, "Sports Accessories", 4.3, 100));
         productList.add(new Product(13, "iPhone Mobile", "A new iphone-14 mobile. very fine and good quality. Electronic accessories.", 65000, R.drawable.iphonefirst, "Mobile Phones", 4.8, 100));
         productList.add(new Product(14, "HP Laptop", "A new HP laptop with 14 inch screen and 256GB SSd and 16GB RAM, battery time 3000hrs.Electronic accessories.", 131500, R.drawable.laptopfirst, "Laptops", 4.1, 100));
         productList.add(new Product(15, "Steal Dumbbells", "A pair dumbbells for men. Jim exercise from different sizes of dumbbells. Sports accessories", 2999, R.drawable.dumbellfirst, "Sports Accessories", 4.4, 100));

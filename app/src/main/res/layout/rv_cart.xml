@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:src="@drawable/icon_img"
+        android:src="@drawable/tshirt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +38,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="52dp"
         android:text="Operum England"
-        android:textColor="#df1b33"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tv_title_1"
@@ -47,11 +47,11 @@
 
     <ImageButton
         android:id="@+id/btn_quantity_minus_1"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:background="@color/secondary_app_color"
-        android:src="@drawable/icon_minus"
+        android:background="@color/white"
+        android:src="@drawable/plus"
         app:layout_constraintBottom_toBottomOf="@+id/tv_quantity_1"
         app:layout_constraintEnd_toStartOf="@+id/tv_quantity_1"
         app:layout_constraintHorizontal_bias="0.0"
@@ -65,7 +65,7 @@
         android:layout_marginEnd="108dp"
         android:text="1"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/tv_price_1"
@@ -74,11 +74,11 @@
 
     <ImageButton
         android:id="@+id/btn_quantity_plus_1"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:background="@color/secondary_app_color"
-        android:src="@drawable/icon_plus"
+        android:background="@color/white"
+        android:src="@drawable/minus"
         app:layout_constraintBottom_toBottomOf="@+id/tv_quantity_1"
         app:layout_constraintEnd_toEndOf="@+id/brand_name_1"
         app:layout_constraintHorizontal_bias="1.0"
