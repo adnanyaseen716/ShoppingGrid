@@ -100,6 +100,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
         searchView.setOnQueryTextListener(new android.widget.SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
@@ -115,6 +116,7 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+
 
     // Method for SearchView.
     private void filter(String text){
@@ -145,7 +147,6 @@ public class HomeFragment extends Fragment {
         productList.add(new Product(13, "iPhone Mobile", "A new iphone-14 mobile. very fine and good quality. Electronic accessories.", 65000, R.drawable.iphonefirst, "Mobile Phones", 4.8, 100));
         productList.add(new Product(14, "HP Laptop", "A new HP laptop with 14 inch screen and 256GB SSd and 16GB RAM, battery time 3000hrs.Electronic accessories.", 131500, R.drawable.laptopfirst, "Laptops", 4.1, 100));
         productList.add(new Product(15, "Steal Dumbbells", "A pair dumbbells for men. Jim exercise from different sizes of dumbbells. Sports accessories", 2999, R.drawable.dumbellfirst, "Sports Accessories", 4.4, 100));
-
 
         return productList;
     }
