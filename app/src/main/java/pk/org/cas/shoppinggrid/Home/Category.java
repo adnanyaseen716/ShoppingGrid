@@ -3,18 +3,19 @@ package pk.org.cas.shoppinggrid.Home;
 import java.util.Objects;
 
 public class Category {
+    private int categoryId;
     private String categoryName;
     private int categoryImageId;
-    private int categoryColorId;
 
     public Category() {
     }
 
-    public Category(String categoryName, int categoryImageId, int categoryColorId) {
+    public Category(int categoryId, String categoryName, int categoryImageId) {
+        this.categoryId = categoryId;
         this.categoryName = categoryName;
         this.categoryImageId = categoryImageId;
-        this.categoryColorId = categoryColorId;
     }
+
 
     public String getCategoryName() {
         return categoryName;
@@ -32,12 +33,12 @@ public class Category {
         this.categoryImageId = categoryImageId;
     }
 
-    public int getCategoryColorId() {
-        return categoryColorId;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategoryColorId(int categoryColorId) {
-        this.categoryColorId = categoryColorId;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     @Override
@@ -45,20 +46,22 @@ public class Category {
         if (this == o) return true;
         if (!(o instanceof Category)) return false;
         Category category = (Category) o;
-        return getCategoryImageId() == category.getCategoryImageId() && getCategoryColorId() == category.getCategoryColorId() && Objects.equals(getCategoryName(), category.getCategoryName());
+        return getCategoryId() == category.getCategoryId() && getCategoryImageId() == category.getCategoryImageId() && Objects.equals(getCategoryName(), category.getCategoryName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCategoryName(), getCategoryImageId(), getCategoryColorId());
+        return Objects.hash(getCategoryId(), getCategoryName(), getCategoryImageId());
     }
 
     @Override
     public String toString() {
         return "Category{" +
-                "categoryName='" + categoryName + '\'' +
+                "categoryId=" + categoryId +
+                ", categoryName='" + categoryName + '\'' +
                 ", categoryImageId=" + categoryImageId +
-                ", categoryColorId=" + categoryColorId +
                 '}';
     }
 }
+
+

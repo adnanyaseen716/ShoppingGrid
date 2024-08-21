@@ -46,6 +46,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         return productList.size();
     }
 
+    public void filterProducts(List<Product> filteredList){
+        this.productList = filteredList;
+        notifyDataSetChanged();
+    }
+
     public class ProductViewHolder extends RecyclerView.ViewHolder {
         ImageView ivProductImage;
         TextView tvProductName, tvProductPrice, tvProductRating;

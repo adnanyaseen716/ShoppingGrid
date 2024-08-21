@@ -55,11 +55,13 @@ public class FavouriteFragment extends Fragment {
 
     public List<Product> getFavouriteData(){
         List<Product> productList = new ArrayList<>();
-        productList.add(new Product("Silver Wrist Watch", 2560, 4.9, R.drawable.watch_second));
-        productList.add(new Product("Silver Wrist Watch", 2560, 4.9, R.drawable.watch_second));
-        productList.add(new Product("Silver Wrist Watch", 2560, 4.9, R.drawable.watch_second));
-        productList.add(new Product("Silver Wrist Watch", 2560, 4.9, R.drawable.watch_second));
-        productList.add(new Product("Silver Wrist Watch", 2560, 4.9, R.drawable.watch_second));
+        productList.add(new Product(1, "Classical Wrist Watch", "It is very expensive classical wrist watch for mens.", 5900, R.drawable.watch_first, "Watches", 4.7, 100));
+        productList.add(new Product(2, "HDD_1TB HardDrive", "A computer hard drive for computers. It has the capacity of 1TB. Electronic accessories.", 25000, R.drawable.ssd, "Computer Accessories", 4.3, 100));
+        productList.add(new Product(3, "Men's Shoes", "A pair of men's shoes. They are very flexible. Easy to wear.", 1999, R.drawable.shoes, "Shoes", 4.7, 100));
+        productList.add(new Product(4, "Summer T-shirt", "A new collection of men's and boys tshirt. It is very good quality summer t-shirt.", 1000, R.drawable.tshirt, "Clothes", 4.2, 100));
+        productList.add(new Product(5, "Racket", "A new collection of sports racket. Good quality squash racket. Badminton", 1570, R.drawable.racketfirst, "Sports Accessories", 4.3, 100));
+        productList.add(new Product(6, "iPhone-14 Mobile", "A new iphone-14 mobile. very fine and good quality. Electronic accessories.", 57450, R.drawable.iphone, "Mobile Phones", 4.8, 100));
+        productList.add(new Product(7, "Men's Shoes", "A pair of men's shoes. They are very flexible. Easy to wear.", 1500, R.drawable.shoes, "Shoes", 4.3, 100));
         return productList;
     }
 }

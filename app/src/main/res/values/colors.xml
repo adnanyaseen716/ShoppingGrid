@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFD31E1E</color>
-    <color name="lightBlue">#2196F3</color>
+    <color name="blue">#2196F3</color>
     <color name="appColor">#FFD31E1E</color>
     <color name="btn_color">#db3022</color>
 
@@ -14,4 +14,10 @@
     <color name="text_app_color">#000000</color>
     <color name="transparent_white">#00000000</color>
 
+    <color name="light_blue">#98CCE9</color>
+    <color name="light_peach">#D5BCB7</color>
+    <color name="light_green">#B4D594</color>
+    <color name="light_orange">#E4B483</color>
+    <color name="light_yellow">#E7E388</color>
+    <color name="light_gray">#FFbdc3c7</color>
 </resources>

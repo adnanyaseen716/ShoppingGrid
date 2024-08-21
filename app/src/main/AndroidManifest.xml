@@ -12,9 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingGrid"
         tools:targetApi="31">
-        <activity android:name=".Cart.ActivityPayment"
+        <activity
+            android:name=".Home.ClickCategoryActivity"
             android:exported="false" />
-        <activity android:name=".Cart.ActivityAddress"
+        <activity
+            android:name=".Cart.ActivityPayment"
+            android:exported="false" />
+        <activity
+            android:name=".Cart.ActivityAddress"
             android:exported="false" />
         <activity
             android:name=".Splash.AfterSplash"
@@ -39,7 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".Splash.SignupForUserActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Splash.SplashScreenActivity"
             android:exported="true">
@@ -75,8 +80,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>

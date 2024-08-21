@@ -56,7 +56,7 @@
 
 
                 <SearchView
-                    android:id="@+id/searchView"
+                    android:id="@+id/searchViewHome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shape_search"

@@ -11,6 +11,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import pk.org.cas.shoppinggrid.Home.HomeFragment;
 import pk.org.cas.shoppinggrid.Home.Product;
 import pk.org.cas.shoppinggrid.Home.ProductAdapter;
 import pk.org.cas.shoppinggrid.R;
@@ -25,7 +26,7 @@ public class MyItemSellerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_item_seller);
 
         rvMyItems = findViewById(R.id.rvMyItems);
-        productAdapter = new ProductAdapter(generateItemData());
+        productAdapter = new ProductAdapter(HomeFragment.getProductsList());
         rvMyItems.setAdapter(productAdapter);
         rvMyItems.setHasFixedSize(true);
         rvMyItems.setLayoutManager( new GridLayoutManager(this,2));
@@ -36,18 +37,5 @@ public class MyItemSellerActivity extends AppCompatActivity {
         });
 
 
-    }
-    public List<Product> generateItemData(){
-        List<Product> myItems = new ArrayList<>();
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-        myItems.add(new Product("Parachute bag best in rains and its quality is best it is very easy to carry and",30090,4.5,R.color.red));
-
-        return myItems;
     }
 }

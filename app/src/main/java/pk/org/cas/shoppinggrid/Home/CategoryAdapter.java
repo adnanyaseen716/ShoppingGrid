@@ -1,5 +1,6 @@
 package pk.org.cas.shoppinggrid.Home;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     public void setOnItemClickListener(OnItemClickListener onItemClickListener){
         this.onItemClickListener = onItemClickListener;
     }
+
     public CategoryAdapter(List<Category> categoryList) {
         this.categoryList = categoryList;
     }
@@ -53,7 +55,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
             super(itemView);
             tvCategoryName = itemView.findViewById(R.id.tvCategoryName);
             ivCategoryImage = itemView.findViewById(R.id.ivCategoryImage);
-            cvCategory = itemView.findViewById(R.id.cvCategory);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
